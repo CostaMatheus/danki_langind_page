@@ -1,0 +1,63 @@
+/*Introdução CSS*/
+
+.introducao{
+    position:absolute;
+    width:500px;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    text-align: center;
+}
+
+.introducao h1{
+    margin:0 auto;
+    text-align: center;
+    font-size:3em;
+    line-height:1.3em;
+    color:#fff;
+}
+
+.introducao p{
+    max-width:394px;
+    margin:0 auto;
+    font-size:1.115em;
+    color:#fff;
+    line-height:1.5;
+    text-align:center;
+    margin-top:15px;
+}
+
+.btn-introducao{
+    display:inline-block;
+    margin: 30px auto 0 auto;
+    padding:10px 30px;
+    text-align: center;
+    background:$laranja;
+    color:#fff;
+    font-size:1.115em;
+    font-weight: bold;
+    border-radius:5px;
+}
+
+.btn-introducao:hover{
+    transition: .3s;
+    background: $laranja-hover;
+}
+
+
+@media screen and (max-width:576px){
+    .introducao{
+        width:calc(100% - 30px);
+    }
+    .introducao h1{
+        font-size:2.5em;
+    }
+    
+    .introducao p{
+        font-size:1em;
+    }
+    
+    .btn-introducao{
+        font-size:1em;
+    }
+}
